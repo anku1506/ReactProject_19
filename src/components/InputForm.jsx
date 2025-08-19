@@ -10,7 +10,7 @@ const InputForm = () => {
   }
   return (
     <>
-      <h1>welcome to input form component</h1>
+      <h3>welcome to input form component</h3>
       <input type='text' value={input} onChange={handleChange} />
       <button>Add task</button>
     {/* printing input value below */}

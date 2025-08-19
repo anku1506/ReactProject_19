@@ -4,13 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import Card from './components/Card.jsx'
 import InputForm from './components/InputForm.jsx'
+import ListRendring from './components/ListRendring.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     <Card />
-    <InputForm/>
+    <InputForm />
+   <ListRendring/>
     
   </StrictMode>,
 )

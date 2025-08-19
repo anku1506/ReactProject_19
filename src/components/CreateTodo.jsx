@@ -24,7 +24,7 @@ const CreateTodo = () => {
   return (
       <>
       <h1>Task: {task}</h1>
-      <div>
+      <div style={{display:'flex',gap:'8px'}}>
         <button onClick={handleAdd}>Add TAsk</button>      
       <button onClick={handleDelete}>Delete TAsk</button>
       <button onClick={handleReset}>Reset TAsk</button>
