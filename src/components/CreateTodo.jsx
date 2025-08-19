@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const CreateTodo = () => {
+  const [task,setTask] = useState(0);
+//Adding task 
+  const handleAdd = (e) => {
+    console.log(e);
+    
+    setTask(task + 1);
+  }
+
+  //deleting task
+  const handleDelete = () => { 
+    const vale = task - 1;    
+    setTask(vale);
+  }
+//Reset task
+   const handleReset = () => {   
+    setTask(0);
+  }
+
+  
+
   return (
+      <>
+      <h1>Task: {task}</h1>
       <div>
-          <h1>CreateTodo</h1>
-    </div>
+        <button onClick={handleAdd}>Add TAsk</button>      
+      <button onClick={handleDelete}>Delete TAsk</button>
+      <button onClick={handleReset}>Reset TAsk</button>
+      </div>
+      
+    </>
   )
 }
 
