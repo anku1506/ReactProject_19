@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const CreateTodo = () => {
+const CreateTodo = (props) => {
+  const name = props.name;
   const [task,setTask] = useState(0);
 //Adding task 
   const handleAdd = (e) => {
@@ -22,7 +23,8 @@ const CreateTodo = () => {
   
 
   return (
-      <>
+    <>
+      {name}
       <h1>Task: {task}</h1>
       <div style={{display:'flex',gap:'8px'}}>
         <button onClick={handleAdd}>Add TAsk</button>      
